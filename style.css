@@ -8,7 +8,8 @@
   --toolbar-border: #c6c9ce;
   --header-bg: #eaecee;
   --header-border: #cbced3;
-  --logo-color: #52555b;
+  --logo-color: #3f434a;
+  --logo-green-dot: #5cb85c;
   --page-bg: #dfe4e7;
   --message-bg: #f3f0e8;
   --text-color: #33363c;
@@ -155,28 +156,19 @@ html, body {
   padding: 0 24px 0 16px;
 }
 
-/* SHL Logo Typography */
+/* SHL Logo */
 .logo-container {
   display: flex;
   align-items: center;
 }
 
-.logo-text {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 26px;
-  font-weight: 600;
-  letter-spacing: -0.5px;
-  color: var(--logo-color);
-  line-height: 1;
-  display: inline-flex;
-  align-items: baseline;
+.shl-logo {
+  display: flex;
+  align-items: center;
 }
 
-.logo-dot {
-  font-size: 26px;
-  font-weight: 600;
-  color: var(--logo-color);
-  margin-left: -1px;
+.shl-svg {
+  display: block;
 }
 
 /* Header Fullscreen Action Button */

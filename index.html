@@ -26,40 +26,40 @@
     <!-- Browser Controls / Toolbar -->
     <div class="browser-toolbar">
       <div class="toolbar-btn back-btn" title="Back">
-        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
           <line x1="13" y1="8" x2="3" y2="8" />
           <polyline points="7 4 3 8 7 12" />
         </svg>
       </div>
       <div class="toolbar-btn forward-btn disabled" title="Forward">
-        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
           <line x1="3" y1="8" x2="13" y2="8" />
           <polyline points="9 4 13 8 9 12" />
         </svg>
       </div>
       <div class="toolbar-btn close-btn" title="Stop">
-        <svg viewBox="0 0 16 16" width="14" height="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <svg viewBox="0 0 16 16" width="13" height="13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
           <line x1="4" y1="4" x2="12" y2="12" />
           <line x1="12" y1="4" x2="4" y2="12" />
         </svg>
       </div>
       <div class="toolbar-btn reload-btn" title="Reload">
-        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
           <path d="M13.5 8 A5.5 5.5 0 1 1 12 4.1 L12 2" />
           <polyline points="9 4.5 12.5 4.5 12.5 1" />
         </svg>
       </div>
       <div class="toolbar-separator"></div>
       <div class="toolbar-btn info-btn" title="Page info">
-        <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.4">
-          <circle cx="8" cy="8" r="6.5" />
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.4">
+          <circle cx="8" cy="8" r="6.2" />
           <line x1="8" y1="7" x2="8" y2="11.5" stroke-linecap="round" />
           <circle cx="8" cy="4.5" r="0.6" fill="currentColor" />
         </svg>
       </div>
       <div class="toolbar-separator"></div>
       <div class="toolbar-btn newpage-btn" title="New document">
-        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.3">
+        <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.3">
           <path d="M3.5 2.5 H9.5 L12.5 5.5 V13.5 H3.5 Z" stroke-linejoin="round" />
           <polyline points="9.5 2.5 9.5 5.5 12.5 5.5" stroke-linejoin="round" />
           <line x1="8" y1="7.5" x2="8" y2="11.5" stroke-linecap="round" />
@@ -73,21 +73,28 @@
   <header class="app-header">
     <div class="header-inner">
       <div class="logo-container">
-        <!-- Exact SHL. logo representation -->
-        <span class="logo-text">SHL<span class="logo-dot">.</span></span>
+        <!-- Exact SHL custom logo with rounded L and green dot -->
+        <div class="shl-logo">
+          <svg class="shl-svg" viewBox="0 0 95 36" width="76" height="29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- S -->
+            <path d="M22 6.5 C16 4.5 7.5 7 7.5 12.5 C7.5 18 22.5 16.5 22.5 24 C22.5 29.5 15.5 32 7.5 29.5" stroke="var(--logo-color)" stroke-width="3.8" stroke-linecap="round" fill="none"/>
+            <!-- H -->
+            <path d="M34 5.5 V30.5 M34 18 H49 M49 5.5 V30.5" stroke="var(--logo-color)" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <!-- L with smooth curved corner -->
+            <path d="M60 5.5 V23 C60 27.5 63 30.5 68 30.5 H74" stroke="var(--logo-color)" stroke-width="3.8" stroke-linecap="round" fill="none"/>
+            <!-- Green Dot -->
+            <circle cx="81" cy="28.5" r="2.3" fill="var(--logo-green-dot)"/>
+          </svg>
+        </div>
       </div>
 
       <div class="header-actions">
         <!-- Fullscreen icon (4 corner brackets) -->
         <button type="button" class="fullscreen-btn" aria-label="Toggle Fullscreen" title="Fullscreen">
-          <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter">
-            <!-- Top Left -->
+          <svg viewBox="0 0 20 20" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter">
             <path d="M3 7 V3 H7" />
-            <!-- Top Right -->
             <path d="M13 3 H17 V7" />
-            <!-- Bottom Left -->
             <path d="M3 13 V17 H7" />
-            <!-- Bottom Right -->
             <path d="M13 17 H17 V13" />
           </svg>
         </button>
@@ -123,7 +130,7 @@
         </div>
         <div class="social-row">
           <span class="social-label">YouTube:</span>
-          <a href="https://www.youtube.com/@AMCATtest" class="social-link" target="_blank" rel="noopener noreferrer">https://www.youtube.com/@AMCATtest</a>
+          <a href="https://www.youtube.com/@AMCATTest" class="social-link" target="_blank" rel="noopener noreferrer">https://www.youtube.com/@AMCATTest</a>
         </div>
       </div>
     </section>
